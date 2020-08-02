@@ -64,8 +64,8 @@ let quotesArray = [
 function randomQuote () {
     let quote = quotesArray [Math.floor(Math.random() * quotesArray.length)]
 
-    document.getElementById('quote').innerHTML = quote.quote
     document.getElementById('img').src = quote.image
+    document.getElementById('quote').innerHTML = quote.quote
     document.getElementById('submit-link').href = quote.url
 }
 
