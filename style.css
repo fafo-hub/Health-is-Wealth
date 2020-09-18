@@ -84,6 +84,11 @@ body {
     100% {left: 160px;}
 }
 
+#section-wrap {
+    position: relative;
+    top: 100px;
+}
+
 .container {
     display: grid;
     grid-template-columns: 500px 400px;
@@ -177,12 +182,21 @@ body {
 .more {
     display: flex;
     margin-left: 36em;
+    position: absolute;
+    top: 280px;
+    left: 150px;
 }
 @media screen and (max-width:900px) {
     .container {
         display: flex;
         flex-direction: column;
         width: 90%;
+        position: relative;
+        top: 50px;
+    }
+    #section-wrap {
+        position: unset;
+        top: 0;
     }
     #quote {
         height: 140px;
@@ -215,6 +229,9 @@ body {
     .logo1, .logo2 {
         width: unset;
     }
+    #section-wrap {
+        top:0;
+    }
 }
 
 .heart {
@@ -223,6 +240,10 @@ body {
     display: flex;
     justify-content: flex-end;
     margin-left: 45%;
+    position: absolute;
+    top: 350px;
+    margin-left: 36em;
+    left: 211px;
 }
 
 .heart-img {
@@ -244,12 +265,15 @@ body {
     background-color: maroon;
     color: white;
     height: 133px;
-    animation-name: footer;
-    opacity: 0;
+    /* animation-name: footer; */
+    /* opacity: 0; */
     animation-duration: 3s;
     animation-fill-mode: forwards;
     animation-timing-function: ease-in;
     animation-delay: 3s;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 }
 
 @keyframes footer {
@@ -261,7 +285,7 @@ body {
 .footer-container {
     display: flex;
     flex-direction: column;
-    margin-left: 550px;
+    margin-left: 705px;
 }
 
 .footer-text {
@@ -288,8 +312,8 @@ span {
 .mail {
     width: 18px;
     position: absolute;
-    top: 533px;
-    left: 704px;
+    top: 42px;
+    left: 859px;
 }
 
 .mail-case {
@@ -323,7 +347,7 @@ span {
 
 @media screen and (max-width:900px) {
     #footer {
-        height: 253px;
+        height: 228px;
     }
     .footer-container {
         margin-left: 50px;
@@ -340,14 +364,19 @@ span {
     }
     .more {
         margin-left: 95px;
+        left: 0;
+        top: 465px;
     }
     .heart {
-        margin-left: 40%;
+        /* margin-left: 40%; */
+        margin-left: -64px;
+        /* left: 0; */
+        top: 530px;
     }
     .mail {
         position: absolute;
         left: 205px;
-        top: 653px;
+        top: 94px;
     }
     .mail-case {
         height: 31px;
