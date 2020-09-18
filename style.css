@@ -348,6 +348,8 @@ span {
 @media screen and (max-width:900px) {
     #footer {
         height: 228px;
+        position: relative;
+        top: 204px;
     }
     .footer-container {
         margin-left: 50px;
